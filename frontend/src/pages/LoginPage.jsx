@@ -73,6 +73,19 @@ function LoginPage() {
               {isSubmitting ? 'Signing in...' : 'Sign In'}
             </button>
           </form>
+          <div className="text-center mt-4">
+            <span className="text-muted small">New to HealthDekho? </span>
+            <button 
+              type="button" 
+              className="btn btn-link text-decoration-none p-0 small fw-bold text-primary"
+              onClick={() => alert("Please contact HealthDekho support to register a new account.")}
+            >
+              Create an account
+            </button>
+          </div>
+           <p className="small text-muted mt-4 mb-0 text-center">
+            Your account and policies, in one place.
+          </p>
         </div>
       </div>
     </div>
