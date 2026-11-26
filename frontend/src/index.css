@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f9; /* Soft corporate background */
+  color: #333;
+}
+
+/* Make the navbar look modern */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff !important;
+}
+
+/* Make the cards pop out */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Modern Table Design */
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.02);
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+/* Primary buttons */
+.btn-primary {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+/* Custom badge for status */
+.badge {
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Status colors */
+.badge-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+.badge-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+.badge-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.login-bg {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-card {
+  animation: slideUpFade 0.6s ease-out;
+}
+
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.floating-logo {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* --- PEACH & WHITE THEME --- */
+:root {
+  --peach-primary: #FF8C69; /* Peach color */
+  --peach-hover: #E67A58;
+  --peach-light: #FFF5F2; /* Very light peach for backgrounds */
+  --text-dark: #2D3748;
+}
+
+body {
+  background-color: var(--peach-light);
+  color: var(--text-dark);
+}
+
+/* Override Bootstrap Primary Button */
+.btn-primary {
+  background-color: var(--peach-primary) !important;
+  border-color: var(--peach-primary) !important;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.btn-primary:hover {
+  background-color: var(--peach-hover) !important;
+}
+
+/* Text Primary Override */
+.text-primary {
+  color: var(--peach-primary) !important;
+}
+
+/* Sidebar Styling */
+.peach-sidebar {
+  background-color: #FFFFFF;
+  border-right: 2px solid #FFE4DB;
+  box-shadow: 4px 0 15px rgba(255, 140, 105, 0.05);
+}
+
+.peach-sidebar .nav-link {
+  color: #718096;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}
+
+.peach-sidebar .nav-link:hover {
+  background-color: var(--peach-light);
+  color: var(--peach-primary);
+}
+
+.peach-sidebar .nav-link.active {
+  background-color: var(--peach-primary);
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 140, 105, 0.3);
+}
+
+/* Login Left Side Image */
+.login-image-side {
+  background-image: linear-gradient(rgba(255, 140, 105, 0.4), rgba(255, 140, 105, 0.7)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop'); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 20px 20px 0;
+}
